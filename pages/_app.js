@@ -17,10 +17,18 @@ function MyApp({ Component, pageProps }) {
         }}
       />
 
+      {/* Your consistent header or other elements */}
+      <header>
+        <h1>Welcome to Thumbnail Downloader</h1>
+      </header>
+
       {/* Render the main component */}
       <Component {...pageProps} />
 
       {/* Your consistent footer or other elements */}
+      <footer>
+        <p>&copy; {new Date().getFullYear()} Your Website Name</p>
+      </footer>
     </Fragment>
   );
 }
