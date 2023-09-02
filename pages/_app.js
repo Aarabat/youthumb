@@ -1,6 +1,6 @@
-import "../styles/index.css";
 import { Fragment } from "react";
 import { DefaultSeo } from "next-seo";
+import "../styles/index.css";
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -16,7 +16,11 @@ function MyApp({ Component, pageProps }) {
           site_name: "Youtube Thumbnail Downloader",
         }}
       />
+
+      {/* Render the main component */}
       <Component {...pageProps} />
+
+      {/* Your consistent footer or other elements */}
     </Fragment>
   );
 }

@@ -23,9 +23,26 @@ class MyDocument extends Document {
             href="/favicon/favicon-16x16.png"
           />
           <link rel="manifest" href="/favicon/site.webmanifest" />
+
+          {/* Add your CSS styles here */}
+          <link rel="stylesheet" href="/styles/index.css" />
         </Head>
         <body>
-          <Main />
+          {/* Add your layout structure here */}
+          <div className="container mx-auto px-4 py-8">
+            <header>
+              <h1>Welcome to Thumbnail Downloader</h1>
+            </header>
+            <main>
+              {/* Your website content here */}
+              <p>This is where you can download thumbnails from various social media platforms.</p>
+              <Main />
+            </main>
+            <footer>
+              {/* Footer content here */}
+              <p>&copy; {new Date().getFullYear()} Your Website Name</p>
+            </footer>
+          </div>
           <NextScript />
         </body>
       </Html>
